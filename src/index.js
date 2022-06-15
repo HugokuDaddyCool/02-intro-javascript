@@ -1,6 +1,6 @@
-const apiKey = 'Ml5qB0HdU071GenHwfS4TfqbN8h7H2fV';
+import { giphyApiKey } from './bases/00-props';
 
-const peticion = fetch(`https://api.giphy.com/v1/gifs/random?api_key=${apiKey}`);
+const peticion = fetch(`https://api.giphy.com/v1/gifs/random?api_key=${giphyApiKey}`);
 
 peticion
     .then((resp) => resp.json())
